@@ -1,0 +1,339 @@
+# Dairy Hub — full public text
+
+> Dairy Hub is a free, installable web app that helps a milk delivery business
+> keep its day-to-day records and turn them into reports. It is an independent
+> personal project run by Rajat Malik. The app needs JavaScript and a free
+> account; this file is a plain-text mirror of the public pages for AI
+> assistants and other tools that do not run JavaScript.
+
+- Canonical page: https://dailymilk.netlify.app/about.html
+- App: https://dailymilk.netlify.app/
+- Contact: contact@rajatmalik.dev
+- Last updated: 28/10/2026
+
+The authoritative versions of the Privacy Policy and Terms of Service are the
+HTML pages at https://dailymilk.netlify.app/privacy.html and
+https://dailymilk.netlify.app/terms.html. If this file and those pages disagree,
+the HTML pages win.
+
+## About Dairy Hub
+
+### Dairy Hub
+
+Record-keeping software for milk delivery businesses, with optional backup to
+the user's own Google Drive.
+
+Dairy Hub is an independent personal project run by Rajat Malik. It is not a
+company, and anyone can create an account and use it. It is free, it does not
+run analytics or advertising, and it does not charge you.
+
+### What the app does
+
+Dairy Hub helps a milk delivery business keep its day-to-day records and turn
+them into reports. It is used by the owner or operator of the business, on their
+own device, under their own account.
+
+- Keep a list of milkmen (suppliers and delivery staff).
+- Record daily milk entries — quantity, shift and date.
+- Maintain milk rates and price lists.
+- Record purchases and customer payments.
+- View and export reports as CSV or PDF.
+
+### How it uses Google Drive
+
+Google Drive is an entirely optional backup destination. It is not required to
+use the app. When a signed-in user chooses to connect Drive, the app requests
+only the scope `https://www.googleapis.com/auth/drive.file`.
+
+- The app creates a single folder named *Dairy Hub Backups* in that user's own
+  Drive and writes JSON snapshots of their database into it.
+- **drive.file is a per-file scope.** The app can only see, create and delete
+  files and folders that it created itself. It cannot read, list or modify any
+  other file in the user's Drive, and it never has access to the contents of
+  their Drive beyond its own backup folder.
+- Each user's backups live in their own Drive account. Data is never copied to
+  a shared location owned by the developer, and users cannot see each other's
+  backups.
+- Drive data is used only to provide the backup and restore feature the user
+  explicitly requests. It is not used for advertising, not sold, and not
+  transferred to third parties except as needed to provide that feature or to
+  comply with the law, in line with the Google API Services User Data Policy,
+  including the Limited Use requirements.
+- No Google data is stored on the developer's servers. The OAuth access token is
+  held in the user's own browser and sent only to Google's API endpoints.
+- A user can revoke access at any time from within the app or from
+  myaccount.google.com/permissions.
+
+### Where the rest of the data is stored
+
+The business records themselves are stored in Google Firebase (Cloud Firestore
+and Cloud Storage) under the user's own account, so they are available on every
+device the user signs in from. Authentication is handled by Google Firebase
+Authentication, and the app never receives the user's Google password.
+
+### Privacy and terms
+
+The Privacy Policy explains what information the app handles and why. The Terms
+of Service set out the rules for using it.
+
+### Contact
+
+Questions, support requests and data enquiries: contact@rajatmalik.dev.
+
+## Privacy Policy
+
+Last updated: 28/10/2026
+
+A free personal project. Nothing is collected from you for me, and nothing is
+charged to you.
+
+### 1. Overview
+
+Dairy Hub is an application for recording and reporting on a milk delivery
+business: milkmen, daily milk entries, milk rates and payments. This policy
+explains what information the app handles, why, and the choices you have.
+
+Dairy Hub is an independent personal project run by Rajat Malik. It is not a
+company, and there is no business entity behind it.
+
+**The short version**
+
+- Dairy Hub is free. I do not charge you and do not take payment card or billing
+  details from you.
+- I do not run analytics, advertising, tracking or profiling, and I do not sell
+  or share your information.
+- I do not take your data for myself. What exists is what you enter, kept in
+  your own account so the app can work for you.
+- You can export or delete your data at any time.
+
+You use Dairy Hub with your own account. The business records you enter are
+yours; this policy explains how they are stored and when they leave your device.
+
+### 2. What is stored to run the app
+
+The app cannot work without some information. This is the complete list, and it
+exists only to provide the service to you.
+
+**2.1 Account information.** When you create an account or sign in with Google,
+I receive your email address, your display name and a unique account
+identifier. Authentication is handled by Google Firebase Authentication. I never
+receive or store your Google password.
+
+**2.2 Business records you enter.** The information you record in the app —
+milkman details, daily milk entries, milk rates, payments and your application
+settings — is stored in your account so it is available on every device you sign
+in from. It is your data, not mine.
+
+**2.3 Security and device information.** To help you review account activity, the
+app records sign-in sessions and trusted devices, including a timestamp, the
+browser's user agent string, and the IP address and approximate geographic
+location reported for that connection. The approximate location is obtained by
+sending the request's IP address to the third-party service ipwho.is (see
+section 6).
+
+**2.4 Preferences.** Formatting choices such as your currency are stored with
+your settings so the app displays amounts consistently.
+
+### 3. Google Drive access
+
+The optional backup feature connects to your personal Google Drive. Access is
+requested through Google Identity Services using the scope
+`https://www.googleapis.com/auth/drive.file`.
+
+- This scope lets the app see, create and delete **only the files and folders it
+  creates itself**. It cannot read, list or modify any other file in your Drive.
+- When you create a backup, the app creates a folder named *Dairy Hub Backups* in
+  your Drive and uploads a JSON snapshot of your database there. Backups are
+  named with a timestamp, for example `dairy-backup-2026-10-02T09-30-00.json`.
+- Restoring and deleting backups also act only on those files.
+- The OAuth access token is stored in your browser's local storage so the
+  connection survives a page refresh. It expires after roughly one hour. Tokens
+  are sent only to Google's API endpoints and are never transmitted to my own
+  servers.
+- You can disconnect at any time from the app's Data Management settings, which
+  clears the stored token, or by revoking access for Dairy Hub at
+  myaccount.google.com/permissions.
+
+### 4. Google API Services User Data Policy
+
+Dairy Hub's use and transfer of information received from Google APIs to any
+other app adheres to the Google API Services User Data Policy, including the
+Limited Use requirements.
+
+In particular, Drive data obtained through the scope above is used solely to
+provide the backup and restore feature you explicitly request. It is not used
+for advertising, is not sold, and is not transferred to third parties except as
+needed to provide that feature or to comply with the law.
+
+### 5. How I use your information
+
+- To operate the app and display your records and reports.
+- To authenticate you and keep your account secure.
+- To show you recent account and security activity so unusual sign-ins are
+  visible.
+- To create the backups you ask for, and to restore them on request.
+- To respond to your support requests.
+
+I do not sell your personal information, and I do not use your business records
+to train advertising profiles.
+
+### 6. Service providers
+
+I rely on the following third parties. Each processes data only as needed to
+provide its service, and none of them receives payment from you:
+
+- **Google Firebase** (Authentication, Cloud Firestore and Cloud Storage) —
+  hosts your account and your business records.
+- **Google Drive API** — stores the backups you choose to create, in your own
+  Drive.
+- **ipwho.is** — receives the IP address of a sign-in request in order to return
+  an approximate city, region and country for your security activity list.
+
+Data is transmitted over HTTPS. Firebase and Google Drive data are encrypted in
+transit by Google.
+
+### 7. Retention and deletion
+
+Your records are kept for as long as your account exists. You can delete backups
+individually from the Data Management settings. Deleting your account removes
+your records from Dairy Hub; copies of exported or backed-up files that you saved
+to your own device or Drive remain under your control and must be deleted by you.
+
+### 8. Your rights and choices
+
+- You can export your full database to CSV, PDF or JSON at any time.
+- You can disconnect Google Drive access from the app or from your Google
+  Account permissions page.
+- You can request access to, correction of, or deletion of your account data by
+  writing to me.
+
+### 9. Children
+
+Dairy Hub is a business tool and is not directed to children. I do not knowingly
+collect information from children.
+
+### 10. Changes to this policy
+
+I may update this policy as the app changes. Material changes will be reflected
+in the "Last updated" date above.
+
+Questions about this document? Contact contact@rajatmalik.dev.
+
+## Terms of Service
+
+Last updated: 28/10/2026
+
+A free personal project. You use it at your own risk, and I accept no claims for
+losses.
+
+### 1. Acceptance
+
+By creating an account or using Dairy Hub, you agree to these Terms of Service
+and to the Privacy Policy. If you do not agree, do not use the app.
+
+Dairy Hub is an independent personal project run by Rajat Malik. It is not a
+company, and these terms are not a commercial contract with any business entity.
+
+Dairy Hub is free, you use it at your own risk, and I do not accept or honor any
+claim for losses arising from it. If you do not accept these terms, do not use
+the app.
+
+### 2. What the service does
+
+Dairy Hub records milk delivery business data — milkmen, daily entries, rates and
+payments — and produces reports. It can optionally back your database up to your
+own Google Drive account and restore it later.
+
+The app is a record-keeping tool. It does not provide accounting, tax, legal or
+financial advice, and figures it calculates are only as accurate as the data you
+enter.
+
+The app is for your own use, and whatever you record or decide with it is
+entirely yours. Dairy Hub is free: I do not charge you, do not take payments from
+you, and do not collect card, bank or billing details. The Payments screen only
+records amounts you enter for your own business; it does not move money.
+
+### 3. Your account
+
+- You are responsible for the accuracy of the information on your account and for
+  keeping your sign-in credentials confidential.
+- You must be old enough to form a binding contract in your jurisdiction to use
+  the service.
+- You are responsible for activity that happens through your account. Write to me
+  promptly if you believe it has been compromised.
+
+### 4. Acceptable use
+
+You agree not to:
+
+- use the service for anything unlawful, or to store data you do not have the
+  right to hold;
+- attempt to access another user's account or data, or probe, disrupt or overload
+  the service;
+- reverse engineer or resell the service except as permitted by applicable law.
+
+### 5. Your data and backups
+
+Your business records belong to you. Google Drive backups are stored in your own
+Drive account and remain under your control. I do not claim ownership of your
+data.
+
+**You are responsible for maintaining your own backups.** Cloud backup is offered
+as a convenience and depends on third-party services. Restoring a backup
+overwrites the current contents of your database with the snapshot you choose,
+and that cannot be undone — export your data first if you are unsure.
+
+### 6. Third-party services
+
+The app depends on Google Firebase and the Google Drive API. Your use of those
+services is also governed by Google's terms. If Google changes or withdraws an
+API the app relies on, the affected feature may stop working.
+
+### 7. Availability and changes
+
+The service is provided on an "as is" and "as available" basis. I may add, change
+or remove features, and may suspend the service for maintenance. I do not
+guarantee uninterrupted or error-free operation.
+
+### 8. Disclaimer and limitation of liability
+
+To the fullest extent permitted by law, the service is provided without
+warranties of any kind, express or implied, including fitness for a particular
+purpose.
+
+**I do not accept or honor any claim for any loss, damage or expense arising from
+the app or from your use of it.** This includes, without limitation, lost or
+corrupted data, lost profits, missed or late deliveries, billing or record-keeping
+errors, business interruption, and any indirect or consequential loss, whether or
+not I was advised that such a loss was possible.
+
+You use Dairy Hub entirely at your own risk. If you do not accept this, do not
+use the app.
+
+Nothing in these terms excludes liability that cannot lawfully be excluded.
+
+### 9. Termination
+
+You may stop using the service and delete your account at any time. I may suspend
+or terminate access if these terms are breached. On termination, the rights you
+granted to operate the service end, while provisions that by their nature should
+survive — such as sections 5 and 8 — continue to apply.
+
+### 10. Changes to these terms
+
+I may update these terms from time to time. Continued use after an update means
+you accept the revised terms. The "Last updated" date above shows when they last
+changed.
+
+### 11. Contact
+
+Questions about these terms can be sent to contact@rajatmalik.dev.
+
+## Contact
+
+Questions, support requests and data enquiries: contact@rajatmalik.dev.
+
+- About: https://dailymilk.netlify.app/about.html
+- Privacy: https://dailymilk.netlify.app/privacy.html
+- Terms: https://dailymilk.netlify.app/terms.html
+- App: https://dailymilk.netlify.app/
