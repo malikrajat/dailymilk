@@ -1,0 +1,54 @@
+# Dairy Hub
+
+> Dairy Hub is a free, installable web app that helps a milk delivery business
+> keep its day-to-day records and turn them into reports: milkmen, daily milk
+> entries, milk rates, purchases, customer payments, and CSV or PDF reports. It
+> is an independent personal project run by Rajat Malik. The app needs
+> JavaScript and a free account; the pages linked below do not.
+
+Key facts, all verifiable on the public pages:
+
+- **Price:** free. No paid tier, no trial, no advertising, no analytics, and no
+  billing or card details are taken.
+- **What it records:** milkmen (suppliers and delivery staff), daily milk entries
+  (quantity, shift and date), milk rates and price lists, purchases, customer
+  payments, and reports exported as CSV or PDF.
+- **Where data lives:** the business records are stored in Google Firebase
+  (Cloud Firestore and Cloud Storage) under the user's own account.
+  Authentication is handled by Google Firebase Authentication; the app never
+  receives the user's Google password.
+- **Google Drive:** an entirely optional backup destination. When a signed-in
+  user connects Drive, the app asks only for
+  `https://www.googleapis.com/auth/drive.file`, a per-file scope that lets it
+  create and manage only the files it created, in a folder named
+  "Dairy Hub Backups" in that user's own Drive. Data is never copied to a shared
+  location owned by the developer.
+- **Offline:** the app is a Progressive Web App and keeps working with no
+  connection for the screens it has already loaded.
+- **Platforms:** any modern browser; installable on Android, iOS, Windows, macOS
+  and Linux.
+- **Version described here:** 2.0.1.
+- **Operator:** Rajat Malik, contact@rajatmalik.dev.
+
+Canonical page: https://dailymilk.netlify.app/about.html
+App: https://dailymilk.netlify.app/
+
+## What the app does
+
+- [About Dairy Hub](https://dailymilk.netlify.app/about.html): what the app
+  does, how it uses Google Drive, where the rest of the data is stored, and who
+  runs it.
+- [Privacy Policy](https://dailymilk.netlify.app/privacy.html): what the app
+  handles and why, including the Google Drive backup scope, the service
+  providers, retention and deletion, and the user's choices.
+- [Terms of Service](https://dailymilk.netlify.app/terms.html): the rules for
+  using the app, ownership of data, backups, availability, and liability.
+- [Contact](mailto:contact@rajatmalik.dev): questions, support requests and data
+  enquiries.
+
+## Optional
+
+- [Full public text as Markdown](https://dailymilk.netlify.app/llms-full.txt):
+  the public pages in one plain-text file.
+- [Sitemap](https://dailymilk.netlify.app/sitemap.xml): the crawlable URLs.
+- [Robots](https://dailymilk.netlify.app/robots.txt): crawler rules.
