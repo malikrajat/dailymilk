@@ -1,0 +1,294 @@
+# Daily milk — full public text
+
+> Daily milk is a free, installable web app that helps a milk delivery business
+> keep its day-to-day records and turn them into reports. It is an independent
+> personal project run by Rajat Malik. The app needs JavaScript and a free
+> account; this file is a plain-text mirror of the public pages for AI
+> assistants and other tools that do not run JavaScript.
+
+- Canonical page: https://dailymilk.rajatmalik.dev/about.html
+- App: https://dailymilk.rajatmalik.dev/
+- Contact: contact@rajatmalik.dev
+- Last updated: 28/10/2026
+
+The authoritative versions of the Privacy Policy and Terms of Service are the
+HTML pages at https://dailymilk.rajatmalik.dev/privacy.html and
+https://dailymilk.rajatmalik.dev/terms.html. If this file and those pages disagree,
+the HTML pages win.
+
+## About Daily milk
+
+### Daily milk
+
+Record-keeping software for milk delivery businesses, with full database export
+and import as JSON.
+
+Daily milk is an independent personal project run by Rajat Malik. It is not a
+company, and anyone can create an account and use it. It is free, it does not
+run analytics or advertising, and it does not charge you.
+
+### What the app does
+
+Daily milk helps a milk delivery business keep its day-to-day records and turn
+them into reports. It is used by the owner or operator of the business, on their
+own device, under their own account.
+
+- Keep a list of milkmen (suppliers and delivery staff).
+- Record daily milk entries — quantity, shift and date.
+- Maintain milk rates and price lists.
+- Record purchases and customer payments.
+- View and export reports as CSV or PDF.
+
+### Data export and import
+
+You can export your full database as a JSON file at any time, and import that
+file on another device from the Data Management settings.
+
+- The JSON file contains your milkmen, daily milk entries, rates, payments and
+  account settings, so the app can be moved or restored without a third-party
+  backup provider.
+- Exports are downloaded directly to your device. They are never uploaded to a
+  shared location owned by the developer.
+- Importing a file overwrites the matching records in your database. Export your
+  current data first if you are unsure.
+
+### Where the rest of the data is stored
+
+The business records themselves are stored in Google Firebase (Cloud Firestore
+and Cloud Storage) under the user's own account, so they are available on every
+device the user signs in from. Authentication is handled by Google Firebase
+Authentication, and the app never receives the user's Google password.
+
+### Privacy and terms
+
+The Privacy Policy explains what information the app handles and why. The Terms
+of Service set out the rules for using it.
+
+### Contact
+
+Questions, support requests and data enquiries: contact@rajatmalik.dev.
+
+## Privacy Policy
+
+Last updated: 28/10/2026
+
+A free personal project. Nothing is collected from you for me, and nothing is
+charged to you.
+
+### 1. Overview
+
+Daily milk is an application for recording and reporting on a milk delivery
+business: milkmen, daily milk entries, milk rates and payments. This policy
+explains what information the app handles, why, and the choices you have.
+
+Daily milk is an independent personal project run by Rajat Malik. It is not a
+company, and there is no business entity behind it.
+
+**The short version**
+
+- Daily milk is free. I do not charge you and do not take payment card or billing
+  details from you.
+- I do not run analytics, advertising, tracking or profiling, and I do not sell
+  or share your information.
+- I do not take your data for myself. What exists is what you enter, kept in
+  your own account so the app can work for you.
+- You can export or delete your data at any time.
+
+You use Daily milk with your own account. The business records you enter are
+yours; this policy explains how they are stored and when they leave your device.
+
+### 2. What is stored to run the app
+
+The app cannot work without some information. This is the complete list, and it
+exists only to provide the service to you.
+
+**2.1 Account information.** When you create an account or sign in with Google,
+I receive your email address, your display name and a unique account
+identifier. Authentication is handled by Google Firebase Authentication. I never
+receive or store your Google password.
+
+**2.2 Business records you enter.** The information you record in the app —
+milkman details, daily milk entries, milk rates, payments and your application
+settings — is stored in your account so it is available on every device you sign
+in from. It is your data, not mine.
+
+**2.3 Security and device information.** To help you review account activity, the
+app records sign-in sessions and trusted devices, including a timestamp, the
+browser's user agent string, and the IP address and approximate geographic
+location reported for that connection. The approximate location is obtained by
+sending the request's IP address to the third-party service ipwho.is (see
+section 4).
+
+**2.4 Preferences.** Formatting choices such as your currency are stored with
+your settings so the app displays amounts consistently.
+
+### 3. How I use your information
+
+- To operate the app and display your records and reports.
+- To authenticate you and keep your account secure.
+- To show you recent account and security activity so unusual sign-ins are
+  visible.
+- To export your database as JSON, and to import it on request.
+- To respond to your support requests.
+
+I do not sell your personal information, and I do not use your business records
+to train advertising profiles.
+
+### 4. Service providers
+
+I rely on the following third parties. Each processes data only as needed to
+provide its service, and none of them receives payment from you:
+
+- **Google Firebase** (Authentication, Cloud Firestore and Cloud Storage) —
+  hosts your account and your business records.
+- **ipwho.is** — receives the IP address of a sign-in request in order to return
+  an approximate city, region and country for your security activity list.
+- **Web3Forms** — receives the contact form fields and forwards them to my email
+  inbox.
+- **hCaptcha** — checks the contact form for automated submissions. It is used
+  only on the contact page; the rest of the app loads no captcha.
+
+Data is transmitted over HTTPS and encrypted in transit by Google.
+
+### 5. Retention and deletion
+
+Your records are kept for as long as your account exists. Deleting your account
+removes your records from Daily milk; copies of exported files that you saved to
+your own device remain under your control and must be deleted by you.
+
+### 6. Your rights and choices
+
+- You can export your full database to CSV, PDF or JSON at any time, and import a
+  JSON export on another device.
+- You can request access to, correction of, or deletion of your account data by
+  writing to me.
+
+### 7. Children
+
+Daily milk is a business tool and is not directed to children. I do not knowingly
+collect information from children.
+
+### 8. Changes to this policy
+
+I may update this policy as the app changes. Material changes will be reflected
+in the "Last updated" date above.
+
+Questions about this document? Contact contact@rajatmalik.dev.
+
+## Terms of Service
+
+Last updated: 28/10/2026
+
+A free personal project. You use it at your own risk, and I accept no claims for
+losses.
+
+### 1. Acceptance
+
+By creating an account or using Daily milk, you agree to these Terms of Service
+and to the Privacy Policy. If you do not agree, do not use the app.
+
+Daily milk is an independent personal project run by Rajat Malik. It is not a
+company, and these terms are not a commercial contract with any business entity.
+
+Daily milk is free, you use it at your own risk, and I do not accept or honor any
+claim for losses arising from it. If you do not accept these terms, do not use
+the app.
+
+### 2. What the service does
+
+Daily milk records milk delivery business data — milkmen, daily entries, rates and
+payments — and produces reports. You can export your database as JSON and import
+it on another device.
+
+The app is a record-keeping tool. It does not provide accounting, tax, legal or
+financial advice, and figures it calculates are only as accurate as the data you
+enter.
+
+The app is for your own use, and whatever you record or decide with it is
+entirely yours. Daily milk is free: I do not charge you, do not take payments from
+you, and do not collect card, bank or billing details. The Payments screen only
+records amounts you enter for your own business; it does not move money.
+
+### 3. Your account
+
+- You are responsible for the accuracy of the information on your account and for
+  keeping your sign-in credentials confidential.
+- You must be old enough to form a binding contract in your jurisdiction to use
+  the service.
+- You are responsible for activity that happens through your account. Write to me
+  promptly if you believe it has been compromised.
+
+### 4. Acceptable use
+
+You agree not to:
+
+- use the service for anything unlawful, or to store data you do not have the
+  right to hold;
+- attempt to access another user's account or data, or probe, disrupt or overload
+  the service;
+- reverse engineer or resell the service except as permitted by applicable law.
+
+### 5. Your data and backups
+
+Your business records belong to you. Files you export remain under your control
+on your own device. I do not claim ownership of your data.
+
+**You are responsible for maintaining your own backups.** Exporting is offered as
+a convenience. Importing a backup overwrites the matching contents of your
+database with the snapshot you choose, and that cannot be undone — export your
+data first if you are unsure.
+
+### 6. Third-party services
+
+The app depends on Google Firebase. Your use of that service is also governed by
+Google's terms. If Google changes or withdraws an API the app relies on, the
+affected feature may stop working.
+
+### 7. Availability and changes
+
+The service is provided on an "as is" and "as available" basis. I may add, change
+or remove features, and may suspend the service for maintenance. I do not
+guarantee uninterrupted or error-free operation.
+
+### 8. Disclaimer and limitation of liability
+
+To the fullest extent permitted by law, the service is provided without
+warranties of any kind, express or implied, including fitness for a particular
+purpose.
+
+**I do not accept or honor any claim for any loss, damage or expense arising from
+the app or from your use of it.** This includes, without limitation, lost or
+corrupted data, lost profits, missed or late deliveries, billing or record-keeping
+errors, business interruption, and any indirect or consequential loss, whether or
+not I was advised that such a loss was possible.
+
+You use Daily milk entirely at your own risk. If you do not accept this, do not
+use the app.
+
+Nothing in these terms excludes liability that cannot lawfully be excluded.
+
+### 9. Termination
+
+You may stop using the service and delete your account at any time. I may suspend
+or terminate access if these terms are breached. On termination, the rights you
+granted to operate the service end, while provisions that by their nature should
+survive — such as sections 5 and 8 — continue to apply.
+
+### 10. Changes to these terms
+
+I may update these terms from time to time. Continued use after an update means
+you accept the revised terms. The "Last updated" date above shows when they last
+changed.
+
+### 11. Contact
+
+Questions about these terms can be sent to contact@rajatmalik.dev.
+
+## Contact
+
+Questions, support requests and data enquiries: contact@rajatmalik.dev.
+
+- About: https://dailymilk.rajatmalik.dev/about.html
+- Privacy: https://dailymilk.rajatmalik.dev/privacy.html
+- Terms: https://dailymilk.rajatmalik.dev/terms.html
+- App: https://dailymilk.rajatmalik.dev/
