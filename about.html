@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Dairy Hub — Milk Delivery Records &amp; Google Drive Backup</title>
+    <title>Daily milk — Milk Delivery Records &amp; JSON Export</title>
     <meta
       name="description"
-      content="Dairy Hub is an app for milk delivery businesses to record milkmen, daily milk entries, rates and payments, and to back the database up to the user's own Google Drive."
+      content="Daily milk is an app for milk delivery businesses to record milkmen, daily milk entries, rates and payments, with full database export and import as JSON."
     />
-    <link rel="canonical" href="https://dailymilk.netlify.app/about.html" />
+    <!-- A canonical link is metadata, not a fetched subresource; SRI does not apply. -->
+    <!-- nosemgrep: html.security.audit.missing-integrity.missing-integrity -->
+    <link rel="canonical" href="https://dailymilk.rajatmalik.dev/about.html" />
     <meta name="author" content="Rajat Malik" />
     <meta
       name="robots"
@@ -19,25 +21,25 @@
       rel="alternate"
       type="text/plain"
       href="/llms.txt"
-      title="Dairy Hub for AI assistants"
+      title="Daily milk for AI assistants"
     />
 
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Dairy Hub" />
+    <meta property="og:site_name" content="Daily milk" />
     <meta
       property="og:title"
-      content="Dairy Hub — Milk Delivery Records &amp; Google Drive Backup"
+      content="Daily milk — Milk Delivery Records &amp; JSON Export"
     />
     <meta
       property="og:description"
-      content="Dairy Hub is an app for milk delivery businesses to record milkmen, daily milk entries, rates and payments, and to back the database up to the user's own Google Drive."
+      content="Daily milk is an app for milk delivery businesses to record milkmen, daily milk entries, rates and payments, with full database export and import as JSON."
     />
-    <meta property="og:url" content="https://dailymilk.netlify.app/about.html" />
+    <meta property="og:url" content="https://dailymilk.rajatmalik.dev/about.html" />
     <meta
       property="og:image"
-      content="https://dailymilk.netlify.app/icons/icon-512x512.png"
+      content="https://dailymilk.rajatmalik.dev/icons/icon-512x512.png"
     />
-    <meta property="og:image:alt" content="Dairy Hub app icon" />
+    <meta property="og:image:alt" content="Daily milk app icon" />
     <meta property="og:image:width" content="512" />
     <meta property="og:image:height" content="512" />
     <meta property="og:locale" content="en_US" />
@@ -45,15 +47,15 @@
     <meta name="twitter:card" content="summary" />
     <meta
       name="twitter:title"
-      content="Dairy Hub — Milk Delivery Records &amp; Google Drive Backup"
+      content="Daily milk — Milk Delivery Records &amp; JSON Export"
     />
     <meta
       name="twitter:description"
-      content="Dairy Hub is an app for milk delivery businesses to record milkmen, daily milk entries, rates and payments, and to back the database up to the user's own Google Drive."
+      content="Daily milk is an app for milk delivery businesses to record milkmen, daily milk entries, rates and payments, with full database export and import as JSON."
     />
     <meta
       name="twitter:image"
-      content="https://dailymilk.netlify.app/icons/icon-512x512.png"
+      content="https://dailymilk.rajatmalik.dev/icons/icon-512x512.png"
     />
 
     <!--
@@ -67,29 +69,29 @@
         "@graph": [
           {
             "@type": "WebPage",
-            "@id": "https://dailymilk.netlify.app/about.html#webpage",
-            "url": "https://dailymilk.netlify.app/about.html",
-            "name": "Dairy Hub — Milk Delivery Records & Google Drive Backup",
-            "description": "Dairy Hub is an app for milk delivery businesses to record milkmen, daily milk entries, rates and payments, and to back the database up to the user's own Google Drive.",
+            "@id": "https://dailymilk.rajatmalik.dev/about.html#webpage",
+            "url": "https://dailymilk.rajatmalik.dev/about.html",
+            "name": "Daily milk — Milk Delivery Records & JSON Export",
+            "description": "Daily milk is an app for milk delivery businesses to record milkmen, daily milk entries, rates and payments, with full database export and import as JSON.",
             "inLanguage": "en",
-            "isPartOf": { "@id": "https://dailymilk.netlify.app/#website" }
+            "isPartOf": { "@id": "https://dailymilk.rajatmalik.dev/#website" }
           },
           {
             "@type": "WebSite",
-            "@id": "https://dailymilk.netlify.app/#website",
-            "url": "https://dailymilk.netlify.app/",
-            "name": "Dairy Hub"
+            "@id": "https://dailymilk.rajatmalik.dev/#website",
+            "url": "https://dailymilk.rajatmalik.dev/",
+            "name": "Daily milk"
           },
           {
             "@type": "SoftwareApplication",
-            "name": "Dairy Hub",
-            "alternateName": "Dairy Hub — Milk Deliveries",
+            "name": "Daily milk",
+            "alternateName": "Daily milk — Milk Deliveries",
             "applicationCategory": "BusinessApplication",
             "applicationSubCategory": "Milk delivery records and reporting",
             "operatingSystem": "Any modern web browser; installable on Android, iOS, Windows, macOS and Linux",
-            "url": "https://dailymilk.netlify.app/",
-            "image": "https://dailymilk.netlify.app/icons/icon-512x512.png",
-            "description": "Dairy Hub — track daily milk purchases, rates, payments and reports for your delivery business.",
+            "url": "https://dailymilk.rajatmalik.dev/",
+            "image": "https://dailymilk.rajatmalik.dev/icons/icon-512x512.png",
+            "description": "Daily milk — track daily milk purchases, rates, payments and reports for your delivery business.",
             "isAccessibleForFree": true,
             "inLanguage": "en",
             "featureList": [
@@ -98,7 +100,7 @@
               "Milk rates and price lists",
               "Customer payments",
               "CSV and PDF reports",
-              "Optional Google Drive backup",
+              "JSON database export and import",
               "Offline support as a Progressive Web App"
             ],
             "offers": {
@@ -173,31 +175,31 @@
   <body>
     <div class="bar">
       <div class="bar-inner">
-        <a href="/about.html">Dairy Hub</a>
+        <a href="/about.html">Daily milk</a>
         <span class="spacer"><a href="/">Open the app</a></span>
       </div>
     </div>
 
     <main>
-      <h1>Dairy Hub</h1>
+      <h1>Daily milk</h1>
       <p class="lead">
-        Record-keeping software for milk delivery businesses, with optional backup to
-        the user's own Google Drive.
+        Record-keeping software for milk delivery businesses, with full database
+        export and import as JSON.
       </p>
       <p>
-        Dairy Hub is an independent personal project run by Rajat Malik. It is not a
+        Daily milk is an independent personal project run by Rajat Malik. It is not a
         company, and anyone can create an account and use it. It is free, it does not
         run analytics or advertising, and it does not charge you.
       </p>
 
       <div class="cta">
-        <a class="primary" href="/">Open Dairy Hub</a>
+        <a class="primary" href="/">Open Daily milk</a>
         <a class="secondary" href="/privacy.html">Privacy Policy</a>
       </div>
 
       <h2>What the app does</h2>
       <p>
-        Dairy Hub helps a milk delivery business keep its day-to-day records and turn
+        Daily milk helps a milk delivery business keep its day-to-day records and turn
         them into reports. It is used by the owner or operator of the business, on
         their own device, under their own account.
       </p>
@@ -209,44 +211,24 @@
         <li>View and export reports as CSV or PDF.</li>
       </ul>
 
-      <h2>How it uses Google Drive</h2>
+      <h2>Data export and import</h2>
       <p>
-        Google Drive is an entirely optional backup destination. It is not required to
-        use the app. When a signed-in user chooses to connect Drive, the app requests
-        only the scope
-        <code>https://www.googleapis.com/auth/drive.file</code>.
+        You can export your full database as a JSON file at any time, and import
+        that file on another device from the Data Management settings.
       </p>
       <ul>
         <li>
-          The app creates a single folder named <em>Dairy Hub Backups</em> in that
-          user's own Drive and writes JSON snapshots of their database into it.
+          The JSON file contains your milkmen, daily milk entries, rates, payments
+          and account settings, so the app can be moved or restored without a
+          third-party backup provider.
         </li>
         <li>
-          <strong>drive.file is a per-file scope.</strong> The app can only see,
-          create and delete files and folders that it created itself. It cannot read,
-          list or modify any other file in the user's Drive, and it never has access to
-          the contents of their Drive beyond its own backup folder.
+          Exports are downloaded directly to your device. They are never uploaded
+          to a shared location owned by the developer.
         </li>
         <li>
-          Each user's backups live in their own Drive account. Data is never copied to
-          a shared location owned by the developer, and users cannot see each other's
-          backups.
-        </li>
-        <li>
-          Drive data is used only to provide the backup and restore feature the user
-          explicitly requests. It is not used for advertising, not sold, and not
-          transferred to third parties except as needed to provide that feature or to
-          comply with the law, in line with the
-          <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>,
-          including the Limited Use requirements.
-        </li>
-        <li>
-          No Google data is stored on the developer's servers. The OAuth access token
-          is held in the user's own browser and sent only to Google's API endpoints.
-        </li>
-        <li>
-          A user can revoke access at any time from within the app or from
-          <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">myaccount.google.com/permissions</a>.
+          Importing a file overwrites the matching records in your database. Export
+          your current data first if you are unsure.
         </li>
       </ul>
 
@@ -273,7 +255,7 @@
     </main>
 
     <footer>
-      <p>Dairy Hub — milk delivery records and reporting.</p>
+      <p>Daily milk — milk delivery records and reporting.</p>
       <nav>
         <a href="/about.html">Home</a>
         <a href="/privacy.html">Privacy Policy</a>

@@ -1,6 +1,6 @@
-# robots.txt for Dairy Hub — https://dailymilk.netlify.app/
+# robots.txt for Daily milk — https://dailymilk.rajatmalik.dev/
 #
-# Dairy Hub is a free record-keeping web app for milk delivery businesses. Its
+# Daily milk is a free record-keeping web app for milk delivery businesses. Its
 # public pages (/about.html, /privacy.html, /terms.html) are static HTML that
 # needs no JavaScript. The app itself lives behind a free account, so the
 # signed-in screens return the app shell and contain no public content.
@@ -97,4 +97,4 @@ Allow: /
 
 # ── Sitemap ────────────────────────────────────────────────────────────────
 # A directive, not a comment: crawlers only read it as a real line.
-Sitemap: https://dailymilk.netlify.app/sitemap.xml
+Sitemap: https://dailymilk.rajatmalik.dev/sitemap.xml

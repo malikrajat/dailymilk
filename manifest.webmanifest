@@ -1,7 +1,7 @@
 {
   "id": "/",
-  "name": "Dairy Hub — Milk Deliveries",
-  "short_name": "Dairy Hub",
+  "name": "Daily milk — Milk Deliveries",
+  "short_name": "Daily milk",
   "description": "Track daily milk purchases, rates, payments and reports for your delivery business. Works offline.",
   "start_url": "/",
   "scope": "/",
