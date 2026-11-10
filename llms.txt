@@ -25,7 +25,7 @@ Key facts, all verifiable on the public pages:
   connection for the screens it has already loaded.
 - **Platforms:** any modern browser; installable on Android, iOS, Windows, macOS
   and Linux.
-- **Version described here:** 2.0.1.
+- **Version described here:** 3.0.0.
 - **Operator:** Rajat Malik, contact@rajatmalik.dev.
 
 Canonical page: https://dailymilk.rajatmalik.dev/about.html

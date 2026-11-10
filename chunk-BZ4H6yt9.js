@@ -1,0 +1,1 @@
+var o=[{path:``,loadComponent:()=>import(`./chunk-DTPYkpMc.js`).then(t=>t.SettingsComponent)}];export{o as SETTINGS_ROUTES};
