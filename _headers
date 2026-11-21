@@ -1,0 +1,31 @@
+# Security headers, shared by every static host that reads a `_headers` file
+# from the publish directory: Netlify (dailymilk.netlify.app) and Cloudflare
+# Pages (dailymilk.pages.dev).
+#
+# GitHub Pages (dailymilk.rajatmalik.dev, the primary site) ignores this file -
+# it does not support custom response headers at all - so its headers have to be
+# added at the DNS/CDN layer. See "Security headers" in README.md.
+#
+# `preload` is inert on *.netlify.app and *.pages.dev: the preload list operates
+# at the registrable-domain level and neither domain is ours to submit. It only
+# becomes meaningful on a custom domain, where it also commits every subdomain
+# to HTTPS - do not submit until that is true everywhere.
+#
+# Content-Security-Policy mirrors the <meta http-equiv> policy in src/index.html,
+# which is not negotiable: `ng build` adds a second, hash-based policy and the
+# browser enforces the intersection of all of them. The only extra directive is
+# frame-ancestors, which <meta> cannot express - it is the header-only half of
+# the clickjacking protection that X-Frame-Options also provides.
+# src/security-headers.spec.ts fails if this drifts from src/index.html.
+#
+# X-XSS-Protection is ignored by every current browser; it is kept because
+# security scanners still look for it.
+
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), display-capture=(), geolocation=(), microphone=(), midi=(), payment=(), usb=(), xr-spatial-tracking=(), accelerometer=(), gyroscope=(), magnetometer=()
+  X-XSS-Protection: 1; mode=block
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' https://accounts.google.com https://apis.google.com https://js.hcaptcha.com https://www.googletagmanager.com https://www.google-analytics.com https://pagead2.googlesyndication.com https://tpc.googlesyndication.com https://partner.googleadservices.com https://www.googletagservices.com https://adservice.google.com https://fundingchoicesmessages.google.com https://ep2.adtrafficquality.google https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://*.hcaptcha.com; img-src 'self' data: blob: https://firebasestorage.googleapis.com https://*.googleusercontent.com https://*.gstatic.com https://*.hcaptcha.com https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.google.com https://*.adtrafficquality.google; font-src 'self' data:; connect-src 'self' http://localhost:3000 https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://api.dairyapp.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://firestore.googleapis.com https://firebasestorage.googleapis.com https://accounts.google.com https://apis.google.com https://dairysync-rl9f0.firebaseapp.com https://*.googleapis.com https://ipwho.is https://api.web3forms.com https://api.hcaptcha.com https://hcaptcha.com https://*.hcaptcha.com https://pagead2.googlesyndication.com https://*.googlesyndication.com https://*.doubleclick.net https://*.adtrafficquality.google https://*.google.com https://fundingchoicesmessages.google.com https://adservice.google.com https://www.googletagservices.com https://partner.googleadservices.com; frame-src 'self' https://dairysync-rl9f0.firebaseapp.com https://accounts.google.com https://apis.google.com https://*.googleapis.com https://*.hcaptcha.com https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://www.google.com https://*.googlesyndication.com https://*.adtrafficquality.google https://fundingchoicesmessages.google.com; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none';

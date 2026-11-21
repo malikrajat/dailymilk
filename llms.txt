@@ -1,0 +1,93 @@
+# Daily milk
+
+> Daily milk is a free, installable web app that helps a milk delivery business
+> keep its day-to-day records and turn them into reports: milkmen, daily milk
+> entries, milk rates, purchases, customer payments, and CSV or PDF reports. It
+> is an independent personal project run by Rajat Malik. The app needs
+> JavaScript and a free account; the pages linked below do not.
+>
+> The site also publishes free, original guides about record keeping, rates and
+> billing, route planning and wastage for milk delivery businesses.
+
+Key facts, all verifiable on the public pages:
+
+- **Price:** the app is free. No paid tier, no trial, no billing or card details
+  are taken. The individual public guide articles may display Google AdSense
+  advertising; the app, the guides index, the about page and all policy pages do
+  not. See `/cookies.html`.
+- **What it records:** milkmen (suppliers and delivery staff), daily milk entries
+  (quantity, shift and date), milk rates and price lists, purchases, customer
+  payments, and reports exported as CSV or PDF.
+- **Where data lives:** the business records are stored in Google Firebase
+  (Cloud Firestore and Cloud Storage) under the user's own account.
+  Authentication is handled by Google Firebase Authentication; the app never
+  receives the user's Google password.
+- **Export and import:** the full database can be exported as a JSON file and
+  imported again on another device from the Data Management settings. Exports
+  are downloaded directly to the user's device and are never uploaded to a
+  shared location owned by the developer.
+- **Offline:** the app is a Progressive Web App and keeps working with no
+  connection for the screens it has already loaded.
+- **Platforms:** any modern browser; installable on Android, iOS, Windows, macOS
+  and Linux.
+- **Version described here:** 4.0.0.
+- **Publishing:** the public guides are written and maintained by the site
+  operator, are educational rather than professional advice, and are kept
+  separate from advertising. See `/editorial-policy.html` and `/disclaimer.html`.
+- **Operator:** Rajat Malik, contact@rajatmalik.dev.
+
+Canonical page: https://dailymilk.rajatmalik.dev/about.html
+App: https://dailymilk.rajatmalik.dev/
+
+## Start here
+
+- [About Daily milk](https://dailymilk.rajatmalik.dev/about.html): what the app
+  does, how data export and import work, where data is stored, who runs it, and
+  how advertising is handled.
+- [Guides index](https://dailymilk.rajatmalik.dev/guides/): every public guide,
+  with a one-line summary.
+- [Contact](https://dailymilk.rajatmalik.dev/contact.html): support, data
+  requests, corrections and advertising enquiries.
+
+## Guides
+
+- [How to keep daily milk delivery records](https://dailymilk.rajatmalik.dev/guides/milk-delivery-record-keeping.html):
+  the seven fields every entry needs, a five-minute daily routine, a 30-minute
+  month-end close, and a free daily sheet.
+- [How to calculate milk rates and customer bills](https://dailymilk.rajatmalik.dev/guides/milk-rate-and-billing.html):
+  per-litre and fat-based pricing, worked monthly bills, mid-month rate changes,
+  returns, advances and supplier reconciliation.
+- [Planning a milk delivery route](https://dailymilk.rajatmalik.dev/guides/route-planning.html):
+  clustering stops, sequencing, loading in reverse, handling exceptions, and
+  measuring whether a change saves time.
+- [Reducing milk wastage, returns and shortages](https://dailymilk.rajatmalik.dev/guides/milk-wastage-and-returns.html):
+  the four kinds of loss, a one-number variance measure, a forecasting rule and
+  a returns policy template.
+- [Notebook, spreadsheet or app](https://dailymilk.rajatmalik.dev/guides/notebook-spreadsheet-or-app.html):
+  an honest comparison, backup discipline and a migration plan.
+- [Record keeping FAQ](https://dailymilk.rajatmalik.dev/guides/faq.html): short
+  answers on shifts, rate changes, returns, fat and SNF, backups, offline use and
+  exports.
+
+## Policies
+
+- [Privacy Policy](https://dailymilk.rajatmalik.dev/privacy.html): what is
+  stored and why, service providers, advertising cookies, legal bases,
+  retention and your rights.
+- [Cookie Policy](https://dailymilk.rajatmalik.dev/cookies.html): first-party
+  storage, Google advertising cookies, consent, and how to control them.
+- [Terms of Service](https://dailymilk.rajatmalik.dev/terms.html): the rules for
+  using the app and the guides, ownership of data, advertising and liability.
+- [Disclaimer](https://dailymilk.rajatmalik.dev/disclaimer.html): the guides are
+  educational, not accounting, tax, legal or financial advice.
+- [Editorial Policy](https://dailymilk.rajatmalik.dev/editorial-policy.html): how
+  content is written, corrected, and kept separate from advertising.
+
+## Optional
+
+- [Full public text as Markdown](https://dailymilk.rajatmalik.dev/llms-full.txt):
+  the core public pages and the guide index in one plain-text file.
+- [Sitemap](https://dailymilk.rajatmalik.dev/sitemap.xml): the crawlable URLs.
+- [Robots](https://dailymilk.rajatmalik.dev/robots.txt): crawler rules.
+- [ads.txt](https://dailymilk.rajatmalik.dev/ads.txt): the authorized seller for
+  this domain's advertising.

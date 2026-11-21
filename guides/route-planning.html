@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Planning a Milk Delivery Route That Saves Time and Fuel</title>
+    <meta
+      name="description"
+      content="A repeatable method for planning a milk delivery route: ordering stops, loading the vehicle, handling exceptions, and measuring whether a change actually saves time."
+    />
+    <link
+      rel="canonical"
+      href="https://dailymilk.rajatmalik.dev/guides/route-planning.html"
+    />
+    <meta name="author" content="Rajat Malik" />
+    <meta
+      name="robots"
+      content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+    />
+    <meta name="theme-color" content="#3b82f6" />
+    <meta name="google-adsense-account" content="ca-pub-4991682021863699" />
+    <meta name="adsense-client" content="ca-pub-4991682021863699" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/site.css" />
+    <link
+      rel="alternate"
+      type="text/plain"
+      href="/llms.txt"
+      title="Daily milk for AI assistants"
+    />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Daily milk" />
+    <meta
+      property="og:title"
+      content="Planning a Milk Delivery Route That Saves Time and Fuel"
+    />
+    <meta
+      property="og:description"
+      content="Order stops, load the vehicle, handle exceptions and measure whether a route change actually saves time."
+    />
+    <meta
+      property="og:url"
+      content="https://dailymilk.rajatmalik.dev/guides/route-planning.html"
+    />
+    <meta
+      property="og:image"
+      content="https://dailymilk.rajatmalik.dev/icons/icon-512x512.png"
+    />
+    <meta property="og:image:alt" content="Daily milk app icon" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="article:published_time" content="2026-11-17" />
+    <meta property="article:modified_time" content="2026-11-17" />
+    <meta property="article:author" content="Rajat Malik" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Planning a Milk Delivery Route That Saves Time and Fuel"
+    />
+    <meta
+      name="twitter:description"
+      content="Order stops, load the vehicle, handle exceptions and measure whether a route change actually saves time."
+    />
+    <meta
+      name="twitter:image"
+      content="https://dailymilk.rajatmalik.dev/icons/icon-512x512.png"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Article",
+            "@id": "https://dailymilk.rajatmalik.dev/guides/route-planning.html#article",
+            "headline": "Planning a Milk Delivery Route That Saves Time and Fuel",
+            "description": "A repeatable method for planning a milk delivery route: ordering stops, loading the vehicle, handling exceptions, and measuring whether a change actually saves time.",
+            "datePublished": "2026-11-17",
+            "dateModified": "2026-11-17",
+            "inLanguage": "en",
+            "mainEntityOfPage": "https://dailymilk.rajatmalik.dev/guides/route-planning.html",
+            "author": {
+              "@type": "Person",
+              "name": "Rajat Malik",
+              "url": "https://rajatmalik.dev/"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Daily milk",
+              "url": "https://dailymilk.rajatmalik.dev/"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://dailymilk.rajatmalik.dev/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Guides",
+                "item": "https://dailymilk.rajatmalik.dev/guides/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Route planning",
+                "item": "https://dailymilk.rajatmalik.dev/guides/route-planning.html"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <script src="/assets/adsense.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="/about.html">
+          <span class="brand__mark" aria-hidden="true">◐</span>
+          <span>Daily milk</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/guides/" aria-current="page">Guides</a>
+          <a href="/about.html">About</a>
+          <a href="/contact.html">Contact</a>
+          <a class="nav-cta" href="/">Open the app</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="page">
+      <article>
+        <div class="hero">
+          <p class="eyebrow">Operations</p>
+          <h1>Planning a milk delivery route that saves time</h1>
+          <p class="lead">
+            A milk round is a fixed obligation at an unforgiving hour. Most of the
+            time saved on a route does not come from a clever app — it comes from
+            removing backtracking, loading the vehicle in the order of the stops,
+            and keeping a written record of what actually happened.
+          </p>
+          <p class="byline">
+            By <strong>Rajat Malik</strong> ·
+            <time datetime="2026-11-17">17 November 2026</time> · 10 min read
+          </p>
+        </div>
+
+        <nav class="toc" aria-label="On this page">
+          <h2>On this page</h2>
+          <ol>
+            <li><a href="#list">Start with an honest stop list</a></li>
+            <li><a href="#cluster">Cluster before you sequence</a></li>
+            <li><a href="#sequence">Sequence the stops</a></li>
+            <li><a href="#load">Load the vehicle in reverse</a></li>
+            <li><a href="#exceptions">Plan for exceptions, not for the ideal day</a></li>
+            <li><a href="#measure">Measure the change</a></li>
+            <li><a href="#sheet">The route sheet</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="list">Start with an honest stop list</h2>
+        <p>
+          A route plan is only as good as its list of stops. Build the list once,
+          properly, before planning anything. For each stop you need five things:
+        </p>
+        <ul>
+          <li>
+            <strong>Address or landmark</strong> — specific enough to find in the
+            dark or in rain.
+          </li>
+          <li>
+            <strong>Usual quantity</strong> in one unit, and the milk types taken.
+          </li>
+          <li>
+            <strong>Time window</strong> — shops usually need delivery before
+            opening; households often do not care, as long as it is before
+            breakfast.
+          </li>
+          <li>
+            <strong>Access notes</strong> — gate code, lift, dog, narrow lane,
+            where the crate is left.
+          </li>
+          <li>
+            <strong>Payment arrangement</strong> — cash on delivery, monthly
+            account, or prepaid.
+          </li>
+        </ul>
+        <p>
+          The access notes are the ones people skip and the ones that cost the
+          most time. "Second gate, not the main one" removes two minutes of
+          searching every single day.
+        </p>
+
+        <h2 id="cluster">Cluster before you sequence</h2>
+        <p>
+          Speed on a milk round comes from density: many stops in one small area,
+          with as little crossing between areas as possible. Before ordering
+          individual stops, group them into four to eight clusters by geography —
+          a street, a market, a housing block, a village lane.
+        </p>
+        <p>
+          Clusters have three benefits over a long ordered list:
+        </p>
+        <ol>
+          <li>
+            They survive changes. If one customer joins or leaves, the cluster
+            still works; a finely tuned sequence has to be rebuilt.
+          </li>
+          <li>
+            They make a helper possible. A second person can take one cluster
+            without needing to know the whole round.
+          </li>
+          <li>
+            They make loading obvious: each crate maps to one cluster.
+          </li>
+        </ol>
+
+        <div class="callout">
+          <h3>A useful rule of thumb</h3>
+          <p>
+            If two stops are within a short walk of each other, they belong in
+            the same cluster even if the addresses look different. Parking and
+            walking usually dominate a round, not driving between stops.
+          </p>
+        </div>
+
+        <h2 id="sequence">Sequence the stops</h2>
+        <p>
+          Inside a cluster, order stops by the direction you enter and leave, not
+          by quantity or by customer seniority. A simple, repeatable method:
+        </p>
+        <ol>
+          <li>
+            <strong>Pin the cluster's entrance and exit.</strong> Which road do
+            you arrive from, and which do you leave by?
+          </li>
+          <li>
+            <strong>Order stops so that the vehicle moves forward.</strong> Avoid
+            turning around unless the street is a dead end.
+          </li>
+          <li>
+            <strong>Put time-window stops first</strong> within the cluster, then
+            the flexible ones.
+          </li>
+          <li>
+            <strong>Keep the same order every day.</strong> Repetition is what
+            makes a round fast; a driver who does not have to think about the
+            next stop finishes sooner.
+          </li>
+        </ol>
+        <p>
+          Do not optimise the order mathematically unless you enjoy it. A
+          sequence that is followed consistently beats an optimal sequence that is
+          re-planned every day and never learned.
+        </p>
+
+        <h2 id="load">Load the vehicle in reverse</h2>
+        <p>
+          The cheapest time saving on a route is loading. Crates should be packed
+          in the reverse order of delivery, so the first stop's crate is the last
+          one in — nearest the door. On a light vehicle this means:
+        </p>
+        <ul>
+          <li>
+            <strong>First stop nearest the door</strong>, last stop deepest in.
+          </li>
+          <li>
+            <strong>One crate per cluster</strong>, labelled with the cluster
+            name, not with a sequence number.
+          </li>
+          <li>
+            <strong>Cash and the collection book at the front</strong>, not buried
+            in the load.
+          </li>
+          <li>
+            <strong>Empty crates go in a dedicated slot</strong> from the first
+            stop, so they do not have to be sorted later.
+          </li>
+        </ul>
+        <p>
+          Loading in reverse also makes shortages visible before departure: if
+          the first crate is short, you find out on the dairy floor rather than
+          at the customer's gate.
+        </p>
+
+        <h2 id="exceptions">Plan for exceptions, not for the ideal day</h2>
+        <p>
+          A route that only works on a dry Tuesday is not a route. Build the
+          exceptions into the plan:
+        </p>
+
+        <h3>Customers who are away</h3>
+        <p>
+          Agree in advance whether an away customer's delivery is paused or
+          left. Write it on the route sheet as a zero with a reason. Do not let a
+          driver decide each time — that is how milk is left out and charged for.
+        </p>
+
+        <h3>Holidays and market days</h3>
+        <p>
+          Demand can double or halve around festivals, weekly markets and school
+          holidays. Note them on the route sheet a week ahead so the vehicle is
+          loaded for the actual day.
+        </p>
+
+        <h3>Bad weather</h3>
+        <p>
+          Rain slows walking, not driving. If a cluster is mostly walk-up
+          deliveries, expect it to take longer and plan the rest of the round
+          around that. Covered crates and a dry place to leave milk matter more
+          than an alternative sequence.
+        </p>
+
+        <h3>Vehicle problems</h3>
+        <p>
+          Know which cluster you would drop first if the vehicle fails. Having an
+          answer — and a phone number for each cluster's customers — turns a
+          breakdown into a delay instead of a day of complaints.
+        </p>
+
+        <h2 id="measure">Measure the change</h2>
+        <p>
+          Route changes are usually judged by feeling. A written measurement is
+          better and takes almost no time. Record four numbers for a week:
+        </p>
+        <div class="table-wrap">
+          <table>
+            <caption>
+              Weekly route log. Record it at the end of the round, not from
+              memory later.
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Measure</th>
+                <th scope="col">How to record</th>
+                <th scope="col">What it tells you</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Start and finish time</td>
+                <td>Clock time on the sheet</td>
+                <td>Total round duration, including delays</td>
+              </tr>
+              <tr>
+                <td>Stops completed</td>
+                <td>Count of non-zero deliveries</td>
+                <td>Time per stop, and whether the round is growing</td>
+              </tr>
+              <tr>
+                <td>Litres carried</td>
+                <td>Load total minus returns</td>
+                <td>Load efficiency and forecasting error</td>
+              </tr>
+              <tr>
+                <td>Delays</td>
+                <td>One line: where and why</td>
+                <td>The recurring cause, which is usually one stop</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Compare a week before the change with a week after. A difference under
+          about ten minutes a day is noise; a consistent fifteen to twenty
+          minutes is a real improvement worth keeping.
+        </p>
+
+        <h2 id="sheet">The route sheet</h2>
+        <p>
+          Keep the route sheet and the delivery record as one document. Two
+          documents drift apart, and the one that is not used for billing becomes
+          the one nobody fills in.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <caption>
+              A route sheet ordered by cluster. The sequence column is the order
+              the driver actually follows.
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Seq</th>
+                <th scope="col">Cluster</th>
+                <th scope="col">Customer</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Access note</th>
+                <th scope="col">Done</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Market Road</td>
+                <td>Sharma Stores</td>
+                <td>12.5</td>
+                <td>Back entrance before 6 a.m.</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Market Road</td>
+                <td>Green Cafe</td>
+                <td>8.0</td>
+                <td>Leave with the guard</td>
+                <td>✓</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Market Road</td>
+                <td>R. Verma</td>
+                <td>0</td>
+                <td>Away until 20th — paused</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Hill Colony</td>
+                <td>…</td>
+                <td>…</td>
+                <td>…</td>
+                <td>—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout--warn">
+          <h3>Keep the sequence stable for at least two weeks</h3>
+          <p>
+            Changing the order every few days prevents anyone from learning it,
+            and it makes the before-and-after comparison meaningless. Pick a
+            sequence, run it for two weeks, then judge it with the numbers.
+          </p>
+        </div>
+
+        <h2>A route is a habit, not a puzzle</h2>
+        <p>
+          The goal is not the mathematically shortest path. It is a round that
+          the same person can run in the dark, in the rain, without thinking
+          hard, and that produces a record you can bill from. Cluster, sequence,
+          load in reverse, and write down what happened — that is the whole
+          method.
+        </p>
+
+        <div class="related">
+          <h2>Next in this series</h2>
+          <ul>
+            <li>
+              <a href="/guides/milk-wastage-and-returns.html"
+                >Reducing milk wastage, returns and shortages</a
+              >
+              — forecasting the load the route carries.
+            </li>
+            <li>
+              <a href="/guides/milk-delivery-record-keeping.html"
+                >How to keep daily milk delivery records</a
+              >
+              — the record a route sheet doubles as.
+            </li>
+            <li>
+              <a href="/guides/faq.html">Record keeping FAQ</a> — short answers
+              to the common questions.
+            </li>
+          </ul>
+          <p>
+            Daily milk keeps milkmen and routes, daily entries and reports in one
+            place. <a href="/">Open Daily milk</a>.
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div>
+          <h2>Daily milk</h2>
+          <ul>
+            <li><a href="/about.html">About the app</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/">Open the app</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Guides</h2>
+          <ul>
+            <li>
+              <a href="/guides/milk-delivery-record-keeping.html">Record keeping</a>
+            </li>
+            <li>
+              <a href="/guides/milk-rate-and-billing.html">Rates and billing</a>
+            </li>
+            <li><a href="/guides/route-planning.html">Route planning</a></li>
+            <li>
+              <a href="/guides/milk-wastage-and-returns.html">Wastage and returns</a>
+            </li>
+            <li>
+              <a href="/guides/notebook-spreadsheet-or-app.html"
+                >Choosing a record system</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>Legal</h2>
+          <ul>
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+            <li><a href="/cookies.html">Cookie Policy</a></li>
+            <li><a href="/terms.html">Terms of Service</a></li>
+            <li><a href="/disclaimer.html">Disclaimer</a></li>
+            <li><a href="/editorial-policy.html">Editorial Policy</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__legal">
+          <p>
+            Daily milk is an independent personal project run by Rajat Malik.
+            Contact:
+            <a href="mailto:contact@rajatmalik.dev">contact@rajatmalik.dev</a>.
+          </p>
+          <p>
+            Public guides may show advertising from Google AdSense. Advertising
+            is always labelled and never influences editorial content.
+          </p>
+          <p>
+            <a href="/cookies.html" data-cookie-settings>Cookie settings</a> ·
+            © 2026 Daily milk
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

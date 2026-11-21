@@ -1,0 +1,1 @@
+import"./chunk-Cipn9wEx.js";import"./chunk-CGylB2X8.js";import"./chunk-YXYLUzOc.js";import"./chunk-DD7OLzqy.js";import"./chunk-TZ0JXr84.js";import"./chunk-p5tldDx0.js";import"./chunk-BkAF5Lc_.js";import{k as l}from"./main-CYY4EEJB.js";var e=[{path:``,loadComponent:()=>import(`./chunk-BiAE8VtA.js`).then(o=>o.ReportsComponent),canActivate:[l]}];export{e as REPORTS_ROUTES};

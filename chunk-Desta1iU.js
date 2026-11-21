@@ -1,0 +1,1 @@
+var r=`dairy-hub:theme`;function o(e){return e===`light`||e===`dark`||e===`system`}function n(){let e=null;try{e=globalThis.localStorage?.getItem(r)??null}catch{return null}return o(e)?e:null}function l(e){try{globalThis.localStorage?.setItem(r,e)}catch{return}}function s(e,t){return e===`dark`?!0:e===`light`?!1:t}export{n,s as r,l as t};

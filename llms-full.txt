@@ -1,0 +1,446 @@
+# Daily milk — full public text
+
+> Daily milk is a free, installable web app that helps a milk delivery business
+> keep its day-to-day records and turn them into reports. It is an independent
+> personal project run by Rajat Malik. The app needs JavaScript and a free
+> account; this file is a plain-text mirror of the core public pages for AI
+> assistants and other tools that do not run JavaScript.
+
+- Canonical page: https://dailymilk.rajatmalik.dev/about.html
+- App: https://dailymilk.rajatmalik.dev/
+- Guides: https://dailymilk.rajatmalik.dev/guides/
+- Contact: contact@rajatmalik.dev
+- Last updated: 17/11/2026
+
+The authoritative versions of the Privacy Policy, Cookie Policy and Terms of
+Service are the HTML pages at
+https://dailymilk.rajatmalik.dev/privacy.html,
+https://dailymilk.rajatmalik.dev/cookies.html and
+https://dailymilk.rajatmalik.dev/terms.html. If this file and those pages
+disagree, the HTML pages win. The guides are mirrored here as an index with
+summaries; each linked page is the full article.
+
+## About Daily milk
+
+### Daily milk
+
+Record-keeping software for milk delivery businesses, with full database export
+and import as JSON.
+
+Daily milk is an independent personal project run by Rajat Malik. It is not a
+company, and anyone can create an account and use it. It is free, and it does not
+charge you. Individual public guide articles carry Google AdSense advertising;
+the app, the guides index, the about page and all policy pages do not.
+
+### What the app does
+
+Daily milk helps a milk delivery business keep its day-to-day records and turn
+them into reports. It is used by the owner or operator of the business, on their
+own device, under their own account.
+
+- Keep a list of milkmen (suppliers and delivery staff).
+- Record daily milk entries — quantity, shift and date.
+- Maintain milk rates and price lists.
+- Record purchases and customer payments.
+- View and export reports as CSV or PDF.
+
+### Data export and import
+
+You can export your full database as a JSON file at any time, and import that
+file on another device from the Data Management settings.
+
+- The JSON file contains your milkmen, daily milk entries, rates, payments and
+  account settings, so the app can be moved or restored without a third-party
+  backup provider.
+- Exports are downloaded directly to your device. They are never uploaded to a
+  shared location owned by the developer.
+- Importing a file overwrites the matching records in your database. Export your
+  current data first if you are unsure.
+
+### Where the rest of the data is stored
+
+The business records themselves are stored in Google Firebase (Cloud Firestore
+and Cloud Storage) under the user's own account, so they are available on every
+device the user signs in from. Authentication is handled by Google Firebase
+Authentication, and the app never receives the user's Google password.
+
+### Offline and installation
+
+Daily milk is a Progressive Web App. Screens it has already loaded keep working
+without a connection, and entries made offline are kept on the device until the
+connection returns. It can be installed from the browser on Android, iOS,
+Windows, macOS and Linux.
+
+### Advertising
+
+Advertising is served by Google AdSense only on the individual guide articles
+that contain substantial editorial content. It is absent from the signed-in app,
+the guides index, the about page, the contact page and every policy page.
+Advertising is labelled and kept separate from editorial content. Advertising
+cookies are described in the cookie policy, and consent is collected through
+Google's certified consent message where the law requires it, including the EEA,
+the UK, Switzerland and Brazil (LGPD).
+
+### The guides
+
+The site publishes free, original guides on the paperwork of a milk round. They
+are written for anyone running a delivery round, whether or not they use the
+app. They are educational, not accounting, tax or legal advice.
+
+### Privacy and terms
+
+The Privacy Policy explains what information the app handles and why. The Terms
+of Service set out the rules for using it. The Cookie Policy lists storage and
+advertising cookies. The Disclaimer explains the limits of the guides, and the
+Editorial Policy explains how they are written.
+
+### Contact
+
+Questions, support requests, corrections and data enquiries:
+contact@rajatmalik.dev. See https://dailymilk.rajatmalik.dev/contact.html.
+
+## Privacy Policy
+
+Last updated: 17/11/2026
+
+A free personal project. I do not charge you or take payment card or billing
+details. The public guides carry Google advertising; the signed-in app does not.
+
+### 1. Who is responsible
+
+Daily milk is an application for recording and reporting on a milk delivery
+business: milkmen, daily milk entries, milk rates and payments. It is an
+independent personal project run by Rajat Malik, an individual developer. It is
+not a company, and there is no business entity behind it.
+
+### 2. What is stored to run the app
+
+**2.1 Account information.** When you create an account or sign in with Google,
+the operator receives your email address, your display name and a unique account
+identifier. Authentication is handled by Google Firebase Authentication. Your
+Google password is never received or stored.
+
+**2.2 Business records you enter.** Milkman details, daily milk entries, milk
+rates, payments and application settings are stored in your account so they are
+available on every device you sign in from. They are your data.
+
+**2.3 Security and device information.** To help you review account activity, the
+app records sign-in sessions and trusted devices, including a timestamp, the
+browser's user agent string, and the IP address and approximate geographic
+location reported for that connection. The approximate location is obtained by
+sending the request's IP address to ipwho.is.
+
+**2.4 Preferences.** Formatting choices such as currency and colour theme are
+stored with your settings.
+
+**2.5 Contact form.** The name, email address, optional phone number and message
+you enter are used only to reply to you. They are not added to a mailing list.
+The form is delivered by Web3Forms and protected by hCaptcha.
+
+### 3. Reading the public pages
+
+The guides, about page, contact page and policy pages are static HTML. They do
+not require an account and do not set a first-party cookie. They load a local
+stylesheet and, on content pages only, the Google AdSense script.
+
+### 4. Cookies and similar technologies
+
+The app uses browser storage for functional purposes: keeping you signed in,
+remembering preferences, and storing app files and queued offline entries. That
+storage is not used for advertising. Public guide pages additionally load Google
+advertising, which may set cookies described in the cookie policy.
+
+### 5. Advertising on the public guides
+
+Advertising is served by Google AdSense only on the individual guide articles
+that contain substantial editorial content. It is absent from the app, the
+guides index, the about page, the contact page and all policy pages. Google's
+required disclosures are:
+
+- Third party vendors, including Google, use cookies to serve ads based on a
+  user's prior visits to this website or other websites.
+- Google's use of advertising cookies enables it and its partners to serve ads
+  to users based on their visit to this site and/or other sites on the Internet.
+- Users may opt out of personalized advertising by visiting Google Ads Settings
+  (https://www.google.com/settings/ads). Alternatively, users can opt out of a
+  third-party vendor's use of cookies for personalised advertising by visiting
+  https://www.aboutads.info/choices/.
+
+Further opt-outs: https://www.youronlinechoices.eu/. Google's privacy policy:
+https://policies.google.com/privacy. How Google uses information from sites or
+apps that use its services:
+https://www.google.com/policies/technologies/partner-sites/.
+
+Third parties may place and read cookies, web beacons, IP addresses and other
+identifiers as a result of ad serving. This site does not set or modify cookies
+on Google's domains, does not pass personally identifiable information to Google
+for advertising, does not collect precise location for advertising, does not
+offer compensation for viewing or clicking ads, and does not use interest-based
+advertising to target children. The site is not directed to children.
+
+Where the law requires consent — the EEA, the UK, Switzerland and Brazil — a
+Google-certified consent message records the choice before advertising cookies
+are set. This supports the GDPR, UK GDPR, LGPD and Google's EU user consent
+policy. The operator does not sell personal information for money; some
+advertising cookies may be treated as "sharing" or "targeted advertising" under
+certain US state privacy laws, and the same controls limit that use.
+
+### 6. How information is used
+
+- To operate the app and display records and reports.
+- To authenticate you and keep your account secure.
+- To show recent account and security activity.
+- To export the database as JSON, and to import it on request.
+- To respond to support requests and corrections.
+- To serve and measure advertising on public guides, subject to consent.
+- To keep the service secure and prevent abuse.
+
+### 7. Service providers
+
+- **Google Firebase** (Authentication, Cloud Firestore and Cloud Storage) — hosts
+  the account and business records.
+- **Google AdSense** — serves advertising on public guide pages and may set
+  advertising cookies.
+- **ipwho.is** — receives the IP address of a sign-in request to return an
+  approximate city, region and country for the security activity list.
+- **Web3Forms** — receives contact form fields and forwards them to the
+  operator's inbox.
+- **hCaptcha** — checks the contact form for automated submissions.
+
+### 8. Legal bases (EEA and UK)
+
+Contract (operating the app), legitimate interests (security, abuse prevention,
+support), consent (advertising cookies where required), and legal obligation
+where applicable.
+
+### 9. Retention and deletion
+
+Records are kept for as long as the account exists. Deleting the account removes
+the records from Daily milk. Exported files saved to a user's own device remain
+under that user's control. Contact-form messages are kept only as long as needed
+to deal with the enquiry.
+
+### 10. Your rights and choices
+
+- Export the full database to CSV, PDF or JSON at any time, and import a JSON
+  export on another device.
+- Request access to, correction of, or deletion of account data.
+- Object to processing based on legitimate interests, or ask for restriction.
+- Change or withdraw advertising consent, and opt out of personalised
+  advertising at Google Ad Settings.
+- Complain to a data protection authority in your country.
+
+### 11. International transfers
+
+The service providers are global providers and may process data outside the
+user's country. Where required, transfers rely on published safeguards such as
+standard contractual clauses.
+
+### 12. Children
+
+Daily milk is a business tool and is not directed to children. Information from
+children is not knowingly collected.
+
+### 13. Changes and contact
+
+Material changes are reflected in the "last updated" date. Questions and data
+requests: contact@rajatmalik.dev.
+
+## Cookie Policy
+
+Last updated: 17/11/2026
+
+- The guides and policy pages set no first-party cookies.
+- Public content pages load Google AdSense, which may set advertising cookies.
+- The app stores sign-in and preference data, plus files and queued offline
+  entries, in browser storage for functional purposes only.
+- Google advertising cookies commonly include `__gads`, `__gpi`, `__eoi`, `IDE`
+  and `test_cookie`. The exact set can change; Google's own documentation is
+  authoritative.
+- Control personalised advertising at https://adssettings.google.com/, via the
+  Digital Advertising Alliance (https://www.aboutads.info/choices/), the European
+  Interactive Digital Advertising Alliance (https://www.youronlinechoices.eu/),
+  or browser cookie settings.
+- Where consent is required, Google's certified consent message records the
+  choice, and it can be changed later from the cookie controls on the page.
+
+## Terms of Service
+
+Last updated: 17/11/2026
+
+A free personal project. You use it at your own risk, and the operator accepts no
+claims for losses.
+
+### 1. Acceptance
+
+By creating an account, using Daily milk, or reading the guides, you agree to
+these terms and to the Privacy Policy. Daily milk is an independent personal
+project run by Rajat Malik. It is not a company, and these terms are not a
+commercial contract with any business entity.
+
+### 2. What the service provides
+
+Daily milk records milk delivery business data — milkmen, daily entries, rates and
+payments — and produces reports. The full database can be exported as JSON and
+imported on another device. The site also publishes free educational guides,
+which are informational and subject to the disclaimer. The app is a
+record-keeping tool; it does not provide accounting, tax, legal or financial
+advice, and figures are only as accurate as the data entered.
+
+### 3. No charges
+
+Daily milk is free. No payments are taken and no card, bank or billing details are
+collected. The Payments screen only records amounts entered for the user's own
+business; it does not move money. Public guides may display Google AdSense
+advertising, which funds the site.
+
+### 4. Your account
+
+You are responsible for the accuracy of account information and for keeping
+sign-in credentials confidential; you must be old enough to form a binding
+contract; you are responsible for activity through your account and should report
+suspected compromise promptly.
+
+### 5. Acceptable use
+
+Do not use the service unlawfully or store data you have no right to hold; do not
+attempt to access another user's account or data, or probe, disrupt or overload
+the service; do not send spam or abusive content through the contact page; do not
+reverse engineer or resell the service except as permitted by law; do not copy
+the guides wholesale and republish them.
+
+### 6. Your data and backups
+
+Business records belong to the user. Exported files remain under the user's
+control. The operator does not claim ownership of the data. The user is
+responsible for maintaining backups. Importing a backup overwrites matching
+records and cannot be undone.
+
+### 7. Third-party services and advertising
+
+The app depends on Google Firebase, and use of that service is also governed by
+Google's terms. Public guides load advertising from Google AdSense. Advertisements
+are selected and served by Google, not by this site. The operator does not control
+which ads appear, does not endorse the advertised products or services, and is not
+a party to any transaction between a reader and an advertiser. External links are
+not under the operator's control.
+
+### 8. Availability and changes
+
+The service is provided "as is" and "as available". Features may be added, changed
+or removed, and the service may be suspended at any time. Uninterrupted or
+error-free operation is not guaranteed.
+
+### 9. Disclaimer and limitation of liability
+
+To the fullest extent permitted by law, the service and the guides are provided
+without warranties of any kind. The operator does not accept or honor any claim
+for any loss, damage or expense arising from the app, the guides, or their use,
+including lost or corrupted data, lost profits, missed or late deliveries,
+billing or record-keeping errors, business interruption, and indirect or
+consequential loss. Nothing excludes liability that cannot lawfully be excluded.
+
+### 10. Intellectual property
+
+The guides, site design and app are protected by copyright. Readers may read,
+print and share links for their own use, and quote a short extract with
+attribution and a link. Republishing an article in full, or using the content to
+train a competing product, requires written permission.
+
+### 11. Termination
+
+Users may stop using the service and delete their account at any time. Access may
+be suspended or terminated if these terms are breached. Provisions that by their
+nature should survive — such as sections 6, 7 and 9 — continue to apply.
+
+### 12. Changes and contact
+
+Continued use after an update means acceptance of the revised terms. The "last
+updated" date shows when they changed. Questions: contact@rajatmalik.dev.
+
+## Disclaimer
+
+Last updated: 17/11/2026
+
+The guides are general educational information about record keeping for milk
+delivery businesses. They are not accounting, tax, legal, financial or business
+advice, and reading them creates no professional relationship. Worked examples
+use round numbers and a placeholder currency; rates, tax treatment, measurement
+conventions and invoicing requirements vary by place and by buyer. No outcome is
+guaranteed. Statements about Daily milk describe the app at the date on the page;
+the privacy policy and terms are authoritative where they apply. Advertising is
+selected by Google and is not an endorsement. To the fullest extent permitted by
+law, no liability is accepted for loss arising from reliance on the content.
+
+## Editorial Policy
+
+Last updated: 17/11/2026
+
+The guides are written and maintained by Rajat Malik, who also builds and runs
+Daily milk. Every guide has to help someone do a job: record a delivery,
+calculate a bill, plan a route, or find where milk is being lost. Worked examples
+are calculated and checked line by line. Local rules are not assumed. Software
+claims are checked against the app and the privacy policy. Dates change when the
+text changes, not when the site is rebuilt. Corrections are made and noted.
+
+Advertising and independence: public guides may display Google AdSense
+advertising. Ads are labelled and visually separated from editorial content.
+Advertisers do not see articles before publication and cannot request changes.
+The site does not sell sponsored posts, paid links or rankings. Where the site's
+own app is mentioned, that is disclosed. Policy pages carry no advertising.
+Drafting and editing tools may be used, but the operator reviews every published
+sentence and is responsible for it.
+
+## Guides index
+
+- **How to keep daily milk delivery records** —
+  https://dailymilk.rajatmalik.dev/guides/milk-delivery-record-keeping.html
+  The seven fields every entry needs (date, shift, milkman/route, customer or
+  supplier, quantity, rate, status or note), a five-minute daily routine, a
+  30-minute month-end close built on four reconciliations, the three most
+  expensive mistakes, and a free daily sheet.
+
+- **How to calculate milk rates and customer bills** —
+  https://dailymilk.rajatmalik.dev/guides/milk-rate-and-billing.html
+  Per-litre and composition-based pricing, a fully worked monthly bill with a
+  mid-month rate change, valuing returns, advances and partial payments,
+  rounding, and reconciling the supplier's bill.
+
+- **Planning a milk delivery route that saves time** —
+  https://dailymilk.rajatmalik.dev/guides/route-planning.html
+  Building an honest stop list, clustering before sequencing, loading the vehicle
+  in reverse delivery order, planning for exceptions, and measuring whether a
+  route change actually saves time.
+
+- **Reducing milk wastage, returns and shortages** —
+  https://dailymilk.rajatmalik.dev/guides/milk-wastage-and-returns.html
+  The four kinds of loss, a one-number daily variance measure, a rolling-average
+  forecasting rule with a written buffer, a returns policy template, cold-chain
+  and handling basics, and a weekly ten-minute review.
+
+- **Notebook, spreadsheet or app** —
+  https://dailymilk.rajatmalik.dev/guides/notebook-spreadsheet-or-app.html
+  An honest comparison of paper, spreadsheets and apps, the cases where paper
+  wins, the three ways spreadsheets fail, backup discipline, and a five-step
+  migration plan that keeps history.
+
+- **Record keeping FAQ** —
+  https://dailymilk.rajatmalik.dev/guides/faq.html
+  Short answers on two shifts, mid-month rate changes, returns, fat and SNF,
+  backup frequency, offline use, data storage, price, accountant exports,
+  supplier mismatches, absent customers and the limits of the guides.
+
+## Contact
+
+Questions, support requests, corrections and data enquiries:
+contact@rajatmalik.dev.
+
+- About: https://dailymilk.rajatmalik.dev/about.html
+- Guides: https://dailymilk.rajatmalik.dev/guides/
+- Contact: https://dailymilk.rajatmalik.dev/contact.html
+- Privacy: https://dailymilk.rajatmalik.dev/privacy.html
+- Cookies: https://dailymilk.rajatmalik.dev/cookies.html
+- Terms: https://dailymilk.rajatmalik.dev/terms.html
+- Disclaimer: https://dailymilk.rajatmalik.dev/disclaimer.html
+- Editorial policy: https://dailymilk.rajatmalik.dev/editorial-policy.html
+- App: https://dailymilk.rajatmalik.dev/
