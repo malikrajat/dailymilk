@@ -1,0 +1,8 @@
+# Legacy URL support for the hosts that read a `_redirects` file from the
+# publish directory (Netlify, Cloudflare Pages). GitHub Pages ignores this file
+# and answers the old path with the app shell instead.
+#
+# The contact page used to be a static document at /contact.html. It is now the
+# Angular route /contact, so old links, bookmarks and search results should land
+# on the form rather than on the app shell's fallback page.
+/contact.html /contact 301

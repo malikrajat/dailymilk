@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reducing Milk Wastage, Returns and Shortages: A Practical Guide</title>
+    <meta
+      name="description"
+      content="Where milk is actually lost on a delivery round, how to measure wastage and returns without new software, and a simple forecasting rule that stops over-ordering."
+    />
+    <link
+      rel="canonical"
+      href="https://dailymilk.rajatmalik.dev/guides/milk-wastage-and-returns.html"
+    />
+    <meta name="author" content="Rajat Malik" />
+    <meta
+      name="robots"
+      content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+    />
+    <meta name="theme-color" content="#3b82f6" />
+    <meta name="google-adsense-account" content="ca-pub-4991682021863699" />
+    <meta name="adsense-client" content="ca-pub-4991682021863699" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/site.css" />
+    <link
+      rel="alternate"
+      type="text/plain"
+      href="/llms.txt"
+      title="Daily milk for AI assistants"
+    />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Daily milk" />
+    <meta
+      property="og:title"
+      content="Reducing Milk Wastage, Returns and Shortages: A Practical Guide"
+    />
+    <meta
+      property="og:description"
+      content="Where milk is lost on a round, how to measure it, and a simple forecasting rule that stops over-ordering."
+    />
+    <meta
+      property="og:url"
+      content="https://dailymilk.rajatmalik.dev/guides/milk-wastage-and-returns.html"
+    />
+    <meta
+      property="og:image"
+      content="https://dailymilk.rajatmalik.dev/icons/icon-512x512.png"
+    />
+    <meta property="og:image:alt" content="Daily milk app icon" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="article:published_time" content="2026-11-17" />
+    <meta property="article:modified_time" content="2026-11-17" />
+    <meta property="article:author" content="Rajat Malik" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Reducing Milk Wastage, Returns and Shortages: A Practical Guide"
+    />
+    <meta
+      name="twitter:description"
+      content="Where milk is lost on a round, how to measure it, and a simple forecasting rule that stops over-ordering."
+    />
+    <meta
+      name="twitter:image"
+      content="https://dailymilk.rajatmalik.dev/icons/icon-512x512.png"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Article",
+            "@id": "https://dailymilk.rajatmalik.dev/guides/milk-wastage-and-returns.html#article",
+            "headline": "Reducing Milk Wastage, Returns and Shortages",
+            "description": "Where milk is actually lost on a delivery round, how to measure wastage and returns, and a simple forecasting rule that stops over-ordering.",
+            "datePublished": "2026-11-17",
+            "dateModified": "2026-11-17",
+            "inLanguage": "en",
+            "mainEntityOfPage": "https://dailymilk.rajatmalik.dev/guides/milk-wastage-and-returns.html",
+            "author": {
+              "@type": "Person",
+              "name": "Rajat Malik",
+              "url": "https://rajatmalik.dev/"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Daily milk",
+              "url": "https://dailymilk.rajatmalik.dev/"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://dailymilk.rajatmalik.dev/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Guides",
+                "item": "https://dailymilk.rajatmalik.dev/guides/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Wastage and returns",
+                "item": "https://dailymilk.rajatmalik.dev/guides/milk-wastage-and-returns.html"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <script src="/assets/adsense.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="/about.html">
+          <span class="brand__mark" aria-hidden="true">◐</span>
+          <span>Daily milk</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/guides/" aria-current="page">Guides</a>
+          <a href="/about.html">About</a>
+          <a href="/contact">Contact</a>
+          <a class="nav-cta" href="/">Open the app</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="page">
+      <article>
+        <div class="hero">
+          <p class="eyebrow">Operations</p>
+          <h1>Reducing milk wastage, returns and shortages</h1>
+          <p class="lead">
+            Milk is a perishable product sold on thin margins, so a small daily
+            leak is a large yearly number. The good news is that most wastage on
+            a delivery round is not random. It comes from a short list of causes,
+            and two of them can be fixed with a notebook.
+          </p>
+          <p class="byline">
+            By <strong>Rajat Malik</strong> ·
+            <time datetime="2026-11-17">17 November 2026</time> · 11 min read
+          </p>
+        </div>
+
+        <nav class="toc" aria-label="On this page">
+          <h2>On this page</h2>
+          <ol>
+            <li><a href="#where">Where the milk actually goes</a></li>
+            <li><a href="#measure">Measure it before you fix it</a></li>
+            <li><a href="#forecast">A forecasting rule that works</a></li>
+            <li><a href="#returns">A returns policy customers understand</a></li>
+            <li><a href="#handling">Handling, cold chain and breakage</a></li>
+            <li><a href="#review">The weekly ten-minute review</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="where">Where the milk actually goes</h2>
+        <p>
+          "Wastage" is used as one word for four different losses. Separating
+          them is the first useful step, because each has a different fix.
+        </p>
+
+        <div class="table-wrap">
+          <table>
+            <caption>
+              Four kinds of loss, and the usual cause of each.
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Kind of loss</th>
+                <th scope="col">What it looks like</th>
+                <th scope="col">Usual cause</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Over-ordering</td>
+                <td>Milk returns unsold at the end of the round</td>
+                <td>Ordering yesterday's quantity without adjusting for today</td>
+              </tr>
+              <tr>
+                <td>Spoilage</td>
+                <td>Milk is sour or off before it is delivered</td>
+                <td>Cold chain break, old stock used first-in-last-out</td>
+              </tr>
+              <tr>
+                <td>Breakage and spillage</td>
+                <td>Cans or pouches damaged in transit</td>
+                <td>Overloading, poor crates, rushed handling</td>
+              </tr>
+              <tr>
+                <td>Unrecorded</td>
+                <td>Milk received does not match milk delivered plus returns</td>
+                <td>Missing entries, staff use, measurement drift</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          Only the first is really a forecasting problem. The others are process
+          problems, and no amount of demand prediction will fix a warm storage
+          room or a crate that splits.
+        </p>
+
+        <h2 id="measure">Measure it before you fix it</h2>
+        <p>
+          You do not need software to measure wastage. You need one number per
+          day, recorded at the same point in the round.
+        </p>
+        <p>
+          <strong
+            >Daily variance = milk received + opening stock − milk delivered −
+            recorded returns − closing stock</strong
+          >
+        </p>
+        <p>
+          In a small business the stock terms are often zero, and the formula
+          collapses to received minus delivered minus returns. That is still
+          useful: a gap that repeats at the same size every day is a habit, while
+          a gap that spikes is an event.
+        </p>
+
+        <div class="table-wrap">
+          <table>
+            <caption>
+              One week of variance. The repeating 2-litre gap is the signal.
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Received</th>
+                <th scope="col">Delivered</th>
+                <th scope="col">Returns</th>
+                <th scope="col">Variance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mon</td>
+                <td>220 L</td>
+                <td>216 L</td>
+                <td>2 L</td>
+                <td>+2 L</td>
+              </tr>
+              <tr>
+                <td>Tue</td>
+                <td>220 L</td>
+                <td>217 L</td>
+                <td>1 L</td>
+                <td>+2 L</td>
+              </tr>
+              <tr>
+                <td>Wed</td>
+                <td>220 L</td>
+                <td>215 L</td>
+                <td>3 L</td>
+                <td>+2 L</td>
+              </tr>
+              <tr>
+                <td>Thu</td>
+                <td>220 L</td>
+                <td>212 L</td>
+                <td>4 L</td>
+                <td>+4 L</td>
+              </tr>
+              <tr>
+                <td>Fri</td>
+                <td>220 L</td>
+                <td>217 L</td>
+                <td>1 L</td>
+                <td>+2 L</td>
+              </tr>
+              <tr>
+                <td>Sat</td>
+                <td>240 L</td>
+                <td>231 L</td>
+                <td>7 L</td>
+                <td>+2 L</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          Two litres a day at ₹58 is about ₹116 a day, or roughly ₹3,500 a month.
+          Thursday's extra two litres is a different question — something
+          happened that day. Record a one-line note for spike days; the note is
+          usually enough to identify the cause without further investigation.
+        </p>
+
+        <h2 id="forecast">A forecasting rule that works</h2>
+        <p>
+          Most small rounds do not need a forecasting model. They need a rule
+          that is better than "same as yesterday". A short rolling average with a
+          weekday adjustment is enough to remove most over-ordering.
+        </p>
+
+        <h3>Step 1: use a rolling average, not one day</h3>
+        <p>
+          Take the same weekday for the last four weeks and average it. Four
+          weeks smooths out one-off events without hiding a genuine trend.
+        </p>
+
+        <h3>Step 2: apply the weekday pattern</h3>
+        <p>
+          Demand is not flat. If Saturdays are consistently 15% higher, order for
+          Saturday rather than for an average day. Build the pattern from your own
+          records, not from a general assumption.
+        </p>
+
+        <h3>Step 3: add a small buffer, then cap it</h3>
+        <p>
+          Add a buffer for uncertainty, but write the buffer down as a number.
+          "Ten litres of buffer" can be reviewed; "a bit extra" cannot. If the
+          buffer is returned more often than it is sold, it is too large.
+        </p>
+
+        <div class="callout">
+          <h3>Worked example</h3>
+          <p>
+            The last four Saturdays delivered 231, 238, 229 and 236 litres — an
+            average of 233.5. Saturday demand is consistently the week's peak, so
+            order 233 litres plus a 10-litre buffer: 243. If returns on Saturday
+            average more than the buffer for three weeks running, reduce the
+            order rather than the buffer.
+          </p>
+        </div>
+
+        <h3>Step 4: separate known events from the pattern</h3>
+        <p>
+          A festival, a school holiday or a customer closing for renovation is
+          not noise; it is a known change. Adjust the order for the event and
+          note it, then return to the pattern the next day. Do not rebuild the
+          whole average around one unusual week.
+        </p>
+
+        <h2 id="returns">A returns policy customers understand</h2>
+        <p>
+          Ambiguity about returns is expensive. A short written policy, given to
+          each customer when they open an account, prevents most disputes and
+          makes the record unambiguous.
+        </p>
+        <ul>
+          <li>
+            <strong>When milk can be returned.</strong> For example: at the time
+            of delivery if it is visibly damaged or sour, otherwise by a stated
+            time the same morning.
+          </li>
+          <li>
+            <strong>How it is credited.</strong> At the rate of the delivery it
+            reverses, on the next bill, as a separate line.
+          </li>
+          <li>
+            <strong>What is not accepted.</strong> Part-used containers, or milk
+            returned after it has been left out — be specific and fair.
+          </li>
+          <li>
+            <strong>Pauses.</strong> How much notice is needed to stop delivery
+            for a holiday, and whether the crate is collected.
+          </li>
+        </ul>
+        <p>
+          Publish the policy on the bill or a card, not only in conversation. A
+          policy nobody can find is the same as no policy.
+        </p>
+
+        <h2 id="handling">Handling, cold chain and breakage</h2>
+        <p>
+          Spoilage and breakage are physical problems with physical fixes:
+        </p>
+        <ul>
+          <li>
+            <strong>Keep milk cold until it leaves.</strong> A cold chain is a
+            chain: one warm hour undoes the rest. Check the storage temperature
+            at the same time each day and write it down.
+          </li>
+          <li>
+            <strong>First in, first out.</strong> Older stock leaves first. A
+            marker on the crate is enough if everyone uses it.
+          </li>
+          <li>
+            <strong>Do not overfill crates.</strong> The extra can that splits a
+            crate costs more than the trip it saves.
+          </li>
+          <li>
+            <strong>Give every crate a home.</strong> A named slot in the vehicle
+            for full and empty crates prevents the end-of-round scramble that
+            breaks things.
+          </li>
+          <li>
+            <strong>Clean and dry.</strong> Residue and moisture shorten the life
+            of crates and cans, and they are a hygiene risk as well as a cost.
+          </li>
+        </ul>
+
+        <h2 id="review">The weekly ten-minute review</h2>
+        <p>
+          Once a week, look at three numbers and write one sentence about each:
+        </p>
+        <ol>
+          <li>
+            <strong>Variance.</strong> Was the gap the same size every day, or did
+            it spike? If it spiked, what happened?
+          </li>
+          <li>
+            <strong>Returns.</strong> Which customers returned milk, and why? A
+            single customer returning repeatedly is a different problem from
+            many customers returning once.
+          </li>
+          <li>
+            <strong>Buffer.</strong> Was the extra milk sold or returned? Adjust
+            the number, not the habit.
+          </li>
+        </ol>
+        <p>
+          Ten minutes a week is enough to catch a leak while it is still small.
+          The alternative — discovering at year end that a few litres a day
+          disappeared — is much more expensive.
+        </p>
+
+        <div class="related">
+          <h2>Next in this series</h2>
+          <ul>
+            <li>
+              <a href="/guides/route-planning.html"
+                >Planning a milk delivery route that saves time</a
+              >
+              — loading and sequencing to reduce breakage and delay.
+            </li>
+            <li>
+              <a href="/guides/milk-rate-and-billing.html"
+                >How to calculate milk rates and customer bills</a
+              >
+              — crediting returns correctly.
+            </li>
+            <li>
+              <a href="/guides/faq.html">Record keeping FAQ</a> — short answers
+              to the common questions.
+            </li>
+          </ul>
+          <p>
+            Daily milk records returns separately from deliveries, so the
+            variance is visible in the report instead of hidden in a total.
+            <a href="/">Open Daily milk</a>.
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div>
+          <h2>Daily milk</h2>
+          <ul>
+            <li><a href="/about.html">About the app</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/">Open the app</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Guides</h2>
+          <ul>
+            <li>
+              <a href="/guides/milk-delivery-record-keeping.html">Record keeping</a>
+            </li>
+            <li>
+              <a href="/guides/milk-rate-and-billing.html">Rates and billing</a>
+            </li>
+            <li><a href="/guides/route-planning.html">Route planning</a></li>
+            <li>
+              <a href="/guides/milk-wastage-and-returns.html">Wastage and returns</a>
+            </li>
+            <li>
+              <a href="/guides/notebook-spreadsheet-or-app.html"
+                >Choosing a record system</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>Legal</h2>
+          <ul>
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+            <li><a href="/cookies.html">Cookie Policy</a></li>
+            <li><a href="/terms.html">Terms of Service</a></li>
+            <li><a href="/disclaimer.html">Disclaimer</a></li>
+            <li><a href="/editorial-policy.html">Editorial Policy</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__legal">
+          <p>
+            Daily milk is an independent personal project run by Rajat Malik.
+            Contact:
+            <a href="mailto:contact@rajatmalik.dev">contact@rajatmalik.dev</a>.
+          </p>
+          <p>
+            Public guides may show advertising from Google AdSense. Advertising
+            is always labelled and never influences editorial content.
+          </p>
+          <p>
+            <a href="/cookies.html" data-cookie-settings>Cookie settings</a> ·
+            © 2026 Daily milk
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+var e={name:120,email:254,subject:160,message:5e3};var n={login:`Sign-in problem`,milkman:`Milkman / delivery`,account:`Account access`,payment:`Payment or billing`,other:`Something else`};var t={open:`Open`,investigating:`Investigating`,resolved:`Resolved`,dismissed:`Dismissed`};var r={low:`Low`,normal:`Normal`,high:`High`,urgent:`Urgent`};export{t as i,n,r,e as t};
